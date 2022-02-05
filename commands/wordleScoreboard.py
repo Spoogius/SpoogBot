@@ -2,7 +2,10 @@ import re
 from functools import cmp_to_key;
 
 async def wordleScoreboard( message ):
- 
+
+  if( not( "wordle" in message.channel.name ) ):
+    return
+
   messages = await message.channel.history( limit=None ).flatten( );
 
   sbMap = { };
