@@ -13,6 +13,7 @@ def find_all(a_str, sub):
     
 
 async def womBingoParser( message, config_file="commands/wom_config.json" ):
+  await message.channel.send( "Thinking...\n" );
   with open(config_file, 'r') as cfg_fin:
     config = json.load(cfg_fin);
 
