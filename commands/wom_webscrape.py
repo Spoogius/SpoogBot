@@ -90,6 +90,9 @@ async def womBingoParser( message, config_file="commands/wom_config.json" ):
   u_usernames = list(u_usernames);
   xp_totals = [ user_totals[f"{user}"]['Overall'] for user in u_usernames ];
   sort_idx = sorted(range(len(xp_totals)), key=lambda k: xp_totals[k]) #https://stackoverflow.com/questions/7851077/how-to-return-index-of-a-sorted-list
+  print(sort_idx)
+  sort_idx.reverse()
+  print(f"Reversed: {sort_idx}")
 
   # Format discord String
   discord_string = f"```| {'Username':12} |";
@@ -98,7 +101,7 @@ async def womBingoParser( message, config_file="commands/wom_config.json" ):
     discord_string += f" {skill:{skill_print_chars}} |";
   discord_string += '\n';
   for user_idx in sort_idx:
-    user = u_usernames[sort_idx[user_idx]]
+    user = u_usernames[user_idx]
     if( user == 'total' or user == 'remaining' ):
       continue
 
