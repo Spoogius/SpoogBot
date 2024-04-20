@@ -1,0 +1,7 @@
+{
+  "competition_homepage": "https://wiseoldman.net/competitions/42466",
+  "user_page_root": "https://wiseoldman.net/players/",
+  "user_page_tail": "/gained?metric=overall&startDate=2024-04-12T14%3A00%3A00.000Z&endDate=2024-04-29T14%3A00%3A00.000Z",
+  "skills": ["Overall", "Woodcutting", "Fishing", "Mining", "Agility", "Slayer"],
+  "target_xp": [40000000, 5000000, 5000000, 5000000, 1000000, 5000000]
+}
